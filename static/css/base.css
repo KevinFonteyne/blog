@@ -1,0 +1,13 @@
+h1 {
+    color:rgb(190, 16, 16)
+}
+
+#id_title,
+#id-subtitle,
+#id_body,
+#id_create {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    border-radius: 8px;
+}
