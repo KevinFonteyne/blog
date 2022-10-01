@@ -5,8 +5,7 @@ h1 {
 #id_title,
 #id-subtitle,
 #id_body,
-#id_create,
-.post_container {
+#id_create {
     padding: 5px;
     margin: 5px;
     width: 100%;

@@ -2,6 +2,7 @@
 
 ## blog project
 
+## heroku link https://fast-coast-61629.herokuapp.com/
 Using what we've learned in classs 1, 2 and 3, let's create and configure a new project
 
 1. The project directory should be `blog`.
