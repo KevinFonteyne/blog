@@ -8,6 +8,15 @@ from .models import Post, Status
 class PostListView(ListView):
     template_name = "posts/list.html"
     model = Post
+    status = "published"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        pending_status = Status.objects.get(name=self.status)
+        context['post_list'] = Post.objects.filter(
+                                        status=pending_status).order_by(
+                                            'created_on').reverse()
+        return context
 
 class DraftPostListView(ListView):
     template_name = "posts/list.html"
